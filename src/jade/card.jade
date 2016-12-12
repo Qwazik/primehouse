@@ -23,6 +23,40 @@ block main
 									li: a(data-largest-img="img/card-img-main.jpg" href="img/card-img-main.jpg"): img(src="img/card-img-mini.jpg", alt="")
 									li: a(data-largest-img="img/projkamen1.jpg" href="img/projkamen1.jpg"): img(src="img/card-img-mini.jpg", alt="")
 									li: a(data-largest-img="img/projkamen2.jpg" href="img/projkamen2.jpg"): img(src="img/card-img-mini.jpg", alt="")
+						
+					.col-md-5.card__right
+						h2 Проект дома из пеноблока с отделкой в стиле лофт
+						.sep.sep--big
+						ul.card__chars
+							li
+								| Этажей
+								span 2
+							li
+								| Жилая площадь:
+								span 290  м2
+							li
+								| Количество спален:
+								span 2
+							li
+								| Гараж:
+								span на 1 машину
+						.sep.sep--big
+						.card__price.clearfix
+							span.complect
+								| Цена в комплектации
+								span Теплобетон
+							span.price 4 500 000 <i class="fa"></i>
+						
+						.card__form
+							.sep.sep--form
+							p Заинтересовало предложение? Задайте свой вопрос и наш менеджер свяжется с вами
+							form(action="#")
+								input(type="text" placeholder="Имя", name="name").input-bd
+								input(type="text" placeholder="Номер телефона", name="phone").input-bd
+								textarea(placeholder="Вопрос").input-bd
+								button(type="submit").btn.btn--green Задать вопрос
+				.row
+					.col-md-7
 						.card__complect.card-complect
 							.card-complect__nav
 								span Комплектация проекта
@@ -63,35 +97,4 @@ block main
 									.card-complect__row
 										span.name Чердачное перекрытие
 										span.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  
-					.col-md-5.card__right
-						h2 Проект дома из пеноблока с отделкой в стиле лофт
-						.sep.sep--big
-						ul.card__chars
-							li
-								| Этажей
-								span 2
-							li
-								| Жилая площадь:
-								span 290  м2
-							li
-								| Количество спален:
-								span 2
-							li
-								| Гараж:
-								span на 1 машину
-						.sep.sep--big
-						.card__price.clearfix
-							span.complect
-								| Цена в комплектации
-								span Теплобетон
-							span.price 4 500 000 <i class="fa"></i>
-						
-						.card__form
-							.sep.sep--form
-							p Заинтересовало предложение? Задайте свой вопрос и наш менеджер свяжется с вами
-							form(action="#")
-								input(type="text" placeholder="Имя", name="name").input-bd
-								input(type="text" placeholder="Номер телефона", name="phone").input-bd
-								textarea(placeholder="Вопрос").input-bd
-								button(type="submit").btn.btn--green Задать вопрос
 	include includes/cifri-noh2
