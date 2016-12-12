@@ -39,9 +39,12 @@
   }(jQuery));
 
 $(function(){
-    $('.certificates__item').equalHeight();
-    $('.inner-steps__item').equalHeight();
-    $('.reference__item').equalHeight();
+    $(window).load(function(){
+       $('.certificates__item').equalHeight();
+        $('.inner-steps__item').equalHeight();
+        $('.reference__item').equalHeight(); 
+    });
+    
 
     /*-------------------------------------------------*/
     /*  card 
