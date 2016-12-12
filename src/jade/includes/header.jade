@@ -42,12 +42,12 @@
 						span
 						span
 					ul.main-menu(itemscope itemtype="https://schema.org/SiteNavigationElement")
-						li(itemprop="name"): a(href="#" itemprop="url") Главная
+						li(itemprop="name"): a(href="/" itemprop="url") Главная
 						li(itemprop="name"): a(href="#" itemprop="url") Индивидуальный проект
-						li(itemprop="name"): a(href="#" itemprop="url") Каталог
-						li(itemprop="name"): a(href="#" itemprop="url") Этапы работ
-						li(itemprop="name"): a(href="#" itemprop="url") Справочник
-						li(itemprop="name"): a(href="#" itemprop="url") О компании
+						li(itemprop="name"): a(href="catalog.html" itemprop="url") Каталог
+						li(itemprop="name"): a(href="steps.html" itemprop="url") Этапы работ
+						li(itemprop="name"): a(href="reference.html" itemprop="url") Справочник
+						li(itemprop="name"): a(href="about.html" itemprop="url") О компании
 				.user-panel
 					span.user-panel__greeting ДОБРО ПОЖАЛОВАТЬ 
 					a(href="#")
@@ -63,9 +63,9 @@
 					.header-slider__form.fl-right
 						p ЗАКАЖИ ЗВОНОК
 						form(action="#")
-							input(type="text" placeholder="Имя")
-							input(type="text" placeholder="Телефон")
-							input(type="text" placeholder="E-mail")
+							input(type="text" placeholder="Имя" name="name")
+							input(type="text" placeholder="Телефон" name="phone")
+							input(type="text" placeholder="E-mail" name="email")
 							span.sep
 							button(type="submit").btn.btn--green Заказать
 // header end
