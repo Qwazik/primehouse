@@ -1,0 +1,527 @@
+
+@media screen and (max-width: 1199px){
+	.main-header__center{
+		
+		.btn{
+			margin-left: 25px;
+			width: 170px;
+		}
+	}
+}
+
+@media screen and (min-width: 991px){
+
+	.main-menu{
+		display: table-row !important;
+	}
+	.catalog-item.kamen{
+		.catalog-item__footer{
+			.name{
+				font-weight: 500;
+				font-size: 30px;
+				text-align: center;
+			}
+			.area{
+				height: auto;
+				font-size: 24px;font-weight: 600;
+				line-height: 40px;
+			}
+			.price{
+				font-size: 40px;
+				.fa{
+					font-size: 34px;
+				}
+				line-height: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px){
+	#contactsMap{
+		height: 250px;
+	}
+	.inner-steps{
+	counter-reset: stepsCounter;
+		&__item{
+			background-image: url('../img/steps-green-bg.png') !important;
+			&:after{
+				color: white !important;
+			}
+		}
+		&__column{
+
+			&:nth-child(4n+3) .inner-steps__item,
+			&:nth-child(4n+4) .inner-steps__item{
+				background-image: url('../img/steps-gray-bg.png') !important;
+				&:after{
+					color: #616161 !important;
+				}
+			}
+		}
+	}
+	.home-why__item{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.main-header__menu .container{
+		display: block;
+	}
+	.responsive-menu{
+		display: inline-block;
+	}
+	.main-header__menu .user-panel{
+		line-height: 30px;
+		width: 220px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+	}
+	.logo__description{
+		margin: 0;
+		display: block;
+		padding: 0;
+		margin-top: 10px;
+		&:before{
+			display: none;
+		}
+		br{
+			display: none;
+		}
+	}
+	.main-menu{
+		clear: both;
+		display: none;
+		width: 100%;
+		padding-bottom: 20px;
+		a{
+			padding: 5px;
+			&:after{
+				display: none;
+			}
+		}
+		li{
+			display: block;
+			width: 100%;
+		}
+		&__wrap{
+			display: inline-block;
+			width: auto;
+			width: 100%;
+		}
+	}
+	.main-top__left{
+		padding-top: 7px;
+	}
+	.header-slider__slogan{
+
+		font-size: 23px;
+		line-height: 1em;
+	}
+	.header-slider__slogan b{
+		font-size: 45px;
+		line-height: 1em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.cifri__item{
+		margin-bottom: 20px;
+	}
+	.reference{
+		&__item{
+			min-height: 0 !important;
+		}
+	}
+	.reference-more{
+		padding: 20px 25px;
+		.time{
+			margin-bottom: 10px;
+		}
+		.name{
+			font-size: 25px;
+		}
+		&__header{
+			margin-bottom: 20px;
+		}
+		&__body{
+			font-size: 15px;
+		}
+		&__footer{
+			margin-top: 30px;
+			.btn{
+				
+				&:first-child{
+					font-size: 0;
+					padding-left: 15px;
+					padding-right: 15px;
+					&:before{
+						content: '<';
+						font-size: 16px;
+					}
+				}
+				&:last-child{
+					font-size: 0;
+					padding-left: 15px;
+					padding-right: 15px;
+					&:before{
+						content: '>';
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	.filter-sort{
+		&__wrap{
+			max-width: 320px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		left: 0;
+		right: 0;
+	}
+	.pagination__wrap{
+		text-align: center;
+		span{
+			display: none;
+		}
+	}
+	.filter{
+
+		.name{
+			display: none;
+		}
+		.w50{
+			width: 100%;
+			float: none;
+			margin-bottom: 10px;
+		}
+		&__sort{
+			text-align: center;
+		}
+		&__show{
+			text-align: center;
+		}
+		&-sort,&-show{
+			margin: 0;
+		}
+	}
+
+	.page__catalog-top{
+		position: relative;
+		.container{
+			padding: 0;
+		}
+		height: auto;
+		line-height: normal;
+	}
+	.catalog-top{
+		&__left,&__right{
+			text-align: center;
+			width: 50%;
+		}
+		&__inner{
+			min-width: 0;
+			width: 100%;
+		}
+	}
+	.inner-steps{
+	counter-reset: stepsCounter;
+		&__item{
+			background-image: url('../img/steps-green-bg.png') !important;
+			&:after{
+				color: white !important;
+			}
+		}
+		&__column{
+			
+			&:nth-child(even) .inner-steps__item{
+				background-image: url('../img/steps-gray-bg.png') !important;
+				&:after{
+					color: #616161 !important;
+				}
+			}
+			&:nth-child(odd) .inner-steps__item{
+				background-image: url('../img/steps-green-bg.png') !important;
+				&:after{
+					color: #fff !important;
+				}
+			}
+		}
+	}
+	.inner-question{
+		&__item{
+			.body{padding-left: 0px;}
+			.name{
+				font-size: 25px;
+				line-height: normal;
+			}
+		}
+	}
+	#mainMap{
+		height: 200px;
+	}
+	.main-map .container{
+		position: static;
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+	.main-map{
+		&__places{
+			margin: 0;
+			text-align: center;
+			padding: 0;
+			width: 100%;
+		}
+	}
+	.inner-about{
+		&__logo, &__text{
+			display: block;
+			float: left;
+			margin-bottom: 20px;
+			padding: 15px;
+		}
+		&__logo{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.sep{
+		margin: 20px auto;
+	}
+	.social{
+		margin-bottom: 10px;
+	}
+	section{
+		padding: 40px 0;
+		&>h2{
+			margin-bottom: 20px;
+		}
+	}
+	body{
+		font-size: 15px;
+	}
+	h1,h2{
+		font-size: 25px;
+		line-height: 1.3em;
+	}
+	h3{
+		font-size: 22px;
+	}
+	p.big{
+		font-size: 18px;
+	}
+	.page__home-features{
+		background: none;
+		.container{
+			padding: 0;
+		}
+	}
+	.home-features{
+		&__left{
+			background-image: url('../img/index-features-left-bg.jpg');
+
+		}
+		&__right{
+			background-color: #F5F5F5;
+		}
+		&__left,&__right{
+			text-align: center;
+			padding: 30px 15px;
+			display: block;
+			width: 100%;
+			float: none;
+			.sep{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			ul{
+				display: inline-block;
+				text-align: left;
+			}
+		}
+	}
+	.main-header{
+		text-align: center;
+		text-align-last: center;
+		.ta-right{
+			text-align: center;
+			text-align-last: center;
+		}
+	}
+	.logo, .header-center__info{
+		display: inline-block;
+	}
+	.info-block li, .search{
+		margin: 5px auto !important;
+		display: block;
+	}
+	.main-header__top, .main-header__top .ta-right{
+		text-align: center;
+		text-align-last: center;
+	}
+	.header-slider{
+		height: auto;
+		text-align: center;
+		&__slogan{
+			padding: 0;
+			margin-bottom: 30px;
+		}
+	}
+	.header-slider .left, .header-slider .right{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+	.header-slider__form{
+		max-width: 100%;
+	}
+	.partners__item{
+		width: 33.3333%;
+	}
+	.main-footer__phone{
+		display: block;
+	}
+	.main-footer__phone{
+		margin-top: 20px;
+		text-align: center;
+		text-align-last: center;
+	}
+	.main-footer__form{
+		margin-left: auto;
+		float: none;
+		display: block;
+		margin-right: auto;
+	}
+
+}
+@media screen and (max-width: 480px){
+	.card__price{
+		text-align: center;
+		span{
+			margin-bottom: 10px;
+			float: none !important; 
+			text-align: center;
+		}
+	}
+	.main-map__places li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.reference-more{
+		padding: 10px;
+		.time{
+			margin-bottom: 5px;
+		}
+		.name{
+			font-size: 20px;
+			line-height: 1em;
+		}
+		&__header{
+			margin-bottom: 15px;
+		}
+		&__body{
+			font-size: 13px;
+			p{
+				margin: 10px 0;
+			}
+		}
+	}
+	.catalog-top{
+		&__inner{
+			.name{
+				font-size: 25px;
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+			.link{
+				font-size: 18px;
+			}
+		}
+	}
+	.inner-question{
+		.name{
+			font-size: 20px;
+		}
+		.answer{
+			padding: 10px;
+		}
+	}
+	.home-projects__more .btn{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.home-projects__item{
+		text-align: center;
+		margin-bottom: 30px;
+		&:after{
+			height: 4px !important;
+		}
+		.btn{
+			margin: 10px 0;
+			display: block !important;
+			animation: none;
+			float: none;
+			width: 90%;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			padding: 0;
+		}
+		.name{
+			float: left;
+			margin-bottom: 10px;
+		}
+		.description{
+			text-align: left;
+			font-size: 14px;
+		}
+		.hsep, .btn, .description, .price{
+			display: block;
+			animation: none !important;
+			position: static;
+			float: none;
+			clear: both;
+		}
+		.area{
+			float: right;
+			margin: 0;
+			padding: 0;
+		}
+		.price{
+			padding: 0 !important;
+			margin: 0 auto !important;
+			border: none !important;
+    		font-size: 30px !important;
+    		.fa{
+    			font-size: 24px;
+    		}
+		}
+	}
+	.home-projects__footer{
+		padding: 10px;
+	}
+	.home-projects__footer, .home-projects__item .price{
+		position: static;
+		height: auto;
+	}
+	.cifri__list{
+		margin: 0 -20px;
+	}
+	.cifri__item{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.header-slider__form{
+		padding: 20px;
+	}
+	.header-slider__slogan b{
+		font-size: 39px;
+	}
+	.header-slider__form p{
+		font-size: 25px;
+	}
+	.partners__item{
+		width: 50%;
+	}
+}

@@ -1,0 +1,53 @@
+extends _template
+
+block main
+	.page__inner-content
+		.container
+			section.inner-content
+				h2 ЭТАПЫ ВЗАИМОДЕЙСТВИЯ
+				.sep.sep--small
+				.inner-steps
+					.row
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name ПЕРВАЯ<br>ВСТРЕЧА
+							p.text Знакомство и конкретизацияпожеланий клиента, составление технического задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Создание личного кабинета на сайте
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Вторая <br>ВСТРЕЧА
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания. технического задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Выезд инспектора технического надзора на участок
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания. технического задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Подписание <br >договора СП
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Мобилизационные работы и посадка  дома
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Возведение дома и сдача промежуточных этапова
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Сдача <br> объекта
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания.
+						.col-md-4.col-sm-6.inner-steps__column: .inner-steps__item
+							span.name Итого - <br>готовый дом
+							p.text Знакомство и конкретизация пожеланий клиента,  составление технического  задания.
+	// steps form
+	.page__steps-form
+		.container
+			section.steps-form
+				h2 Узнать больше
+				.sep.sep--small
+				.steps-form__form
+					p Заполните необходимые поля и наш консультант свяжется с вами в ближайшее время
+					form(action="#")
+						input(type="text" placeholder="Имя").input-bd
+						input(type="text" placeholder="Телефон").input-bd
+						input(type="text" placeholder="E-mail").input-bd
+						.sep.sep--form
+						button(type="submit").btn.btn--blue Проконсультироваться
+	// steps form end
+	include includes/cifri-noh2

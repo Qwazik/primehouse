@@ -1,0 +1,120 @@
+extends _template
+
+block main
+	// index projects
+	.page__home-projects
+		.container
+			section.home-projects
+				h2 Проекты
+				.sep.sep--big
+				.row.home-projects__list
+					-for(i=0;i<4;i++)
+						.col-md-6: .home-projects__item
+							img(src="img/index-project1.png", alt="")
+							.home-projects__footer.clearfix
+								span.name Панорама
+								span.area 275 м<sup>2</sup>
+								.hsep
+								p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit pharetra nisl ut commodo. Aenean nec elementum ante, in lacinia nunc. Vestibulum et tellus congue, dignissim magna id, ultrices ante. 
+								a(href="#").btn.btn--green Подробнее
+								span.price.fl-right 
+									| 4 500 000 
+									i.fa.fa-rouble
+					.col-md-12.home-projects__more
+						a(href="#").btn.btn--green смотреть все проекты
+	// index projects end
+	// home form
+	.page__home-form
+		.container
+			section.home-form
+				h2 Получить консультация по проектам
+				.sep.sep--small
+				.home-form__form
+					p Заполните необходимые поля и наш консультант свяжется с вами в ближайшее время
+					form(action="#")
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Телефон")
+						input(type="text" placeholder="E-mail")
+						.sep.sep--form
+						button(type="submit").btn.btn--white Проконсультироваться
+	// home form end
+	// home why
+	.page__home-why
+		.container
+			section.home-why
+				h2 Почему мы
+				.sep.sep--small
+				ul.home-why__list
+					li.home-why__item
+						i.fa 
+						span Фиксируем сметную <br> стоимость и не меняем её
+					li.home-why__item
+						i.fa 
+						span Соблюдаем график <br> производственных работ
+					li.home-why__item
+						i.fa 
+						span Еженедельная отчетность,<br> личный кабинет на сайте
+					li.home-why__item
+						i.fa 
+						span Служба технического <br> надзора на вашей стороне
+					li.home-why__item
+						i.fa 
+						span Даём гарантию <br> 10 лет
+	// home why end
+	// home features 
+	.page__home-features
+		.container
+			.home-features
+				.w50.home-features__left
+					h3 Заказать консультацию
+					form(action="#")
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Телефон")
+						input(type="text" placeholder="E-mail")
+						.sep.sep--form
+						button(type="submit").btn.btn--green проконсультироваться
+				.w50.home-features__right
+					h3 НАШИ ПРЕИМУЩЕСТВА
+					.sep.sep--small
+					ul.ul.ul--arrow
+						li Бесплатный выезд на участок и привязка дома
+						li Отсутствие затрат на проектироваaние
+						li Отчётность тепловизионной картой
+						li 49 посёлков на выбор
+						li Онлайн наблюдение за строительством (камера на объекте)
+						li Личный менеджерпо сопровождению всегда на связи
+						li Страхование дома на 1 год от «РЕСО-Гарантия» в подарок
+	// home features end
+	// home partners
+	.page__partners
+		.container
+			section.partners
+				h2 Наши партнеры
+				.sep.sep--small
+				ul.partners__list
+					.partners__item: img(src="img/partner1.png", alt="")
+					.partners__item: img(src="img/partner2.png", alt="")
+					.partners__item: img(src="img/partner3.png", alt="")
+					.partners__item: img(src="img/partner4.png", alt="")
+					.partners__item: img(src="img/partner5.png", alt="")
+					.partners__item: img(src="img/partner6.png", alt="")
+	// home partners end
+	include includes/cifri
+	// about-block
+	.page__about-block
+		.container
+			.about-block
+				h2 Строительство и проектирование частных домов любой сложности по низкой цене в Москве от компании «PRIMEHouse»
+				p.big Самые распространенные риски, с которыми может столкнуться каждый:
+				ul.ul.offset-left
+					li Неудача при выборе проектировщика и строительных бригад, которые зачастую уже после получения аванса исчезают.
+					li Некачественно выполненные работы из дешевых материалов. Такое строение уже через год приходит в негодность       и требует самого капитального ремонта – в лучшем случае.
+					li Большие расходы, которые появляются во время строительства и бригадир объявляет об увеличении сметной стоимости работ
+				p Также есть много всевозможных моментов, от которых теряется надежда и вера в строительные организации.Но только не в нашу компанию!
+				h2 Мы – команда профессионалов
+				p В штате компании «PrimeHouse» более 30 профессиональных проектировщиков, а также квалифицированные отделочники и строителипо всем специальностям. Здесь нет универсалов, каждый занимается только своей работой, а, как известно, узкопрофильные работники всегда имеют достаточный опыт по своей специальности и любую работу выполняют на совесть.
+				p У нас вы можете заказать проекты домов не только в Москве, но и по Московской области в пределах 200 – 300 км. от МКАД.Мы для вас построим шикарный коттедж, таунхаус, бассейн и банный комплекс со всеми удобствами.
+				p Для тех, кто не имеет большого земельного участка, всегда есть экономичный вариант проектов домов и бань из различных материалов – все зависит от желания самого клиента и его возможностей.
+				p Достаточно обратиться на сайт компании «PrimeHouse» и оставить заявку, указав желаемый объект и его размеры. Наши специалисты приедут и быстро произведут все необходимые замеры, а также рассчитают окончательную стоимость, которая останется непоколебимой.ходимые документы, получить справки от разных организаций, подведут водопровод и газ, подключат электричество. То есть сделают все на пустом загородном участке именно «под ключ», а не просто возведут стены с отделкой.
+
+	

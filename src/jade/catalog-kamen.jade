@@ -1,0 +1,65 @@
+extends _template
+
+block main
+	.page__inner-content
+		.container
+			.inner-content
+				h2 КАТАЛОГ
+	// catalog form
+	.page__catalog
+		.container
+			.filter.clearfix
+				.w50
+					.filter-sort__wrap: .filter__sort
+						span.name Сортировать:
+						.filter-sort
+							.filter-sort__active По площади (больше)
+							ul.filter-sort__nav
+								li.active По площади (больше)
+								li По площади (меньше)
+								li По популярности (ниже)
+								li По популярности (выше)
+				.w50
+					.filter__show
+						span.name Отображать по:
+						ul.filter-show
+							li: a(href="#").active 6
+							li: a(href="#") 12
+							li: a(href="#") 24
+			.catalog
+				.row
+					-for(i=1;i<=4;i++)
+						.col-md-6.col-sm-6: .catalog__item.catalog-item.kamen
+							a(href="#").catalog-item__image
+								img(src="img/projkamen2.jpg", alt="")
+							.catalog-item__footer
+								span.name Проект дома из камня с отделкой в стиле лофт
+								.bottom.clearfix
+									.w50: span.area 275 м<sup>2</sup>
+									.w50: span.price
+										| 4 500 000 
+										i.fa 
+							.catalog-item__hover
+								ul.columns2
+									li
+										span Этажей: 
+										| 2
+									li
+										span Жилая площадь: 
+										| 290 м2
+									li
+										span Количество спален: 
+										| 2
+									li
+										span Гараж: 
+										| на 1 машину
+			.catalog__footer.pagination__wrap
+				span Страницы: 
+				ul.pagination
+					li: a(href="#").active 1
+					li: a(href="#") 2
+					li: a(href="#") 3
+					li: span ...
+					li: a(href="#") 5
+	// catalog end
+	include includes/cifri-noh2

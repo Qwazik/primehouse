@@ -1,0 +1,48 @@
+extends _template
+
+block main
+	.page__inner-content
+		.container
+			section.inner-content
+				h2 СПРАВОЧНИК
+				.sep.sep--small
+				.reference
+					.reference__search
+						form(action="#")
+							input(type="text", placeholder="поиск по справочнику").input-bd
+							button(type="submit").btn.btn--green.fa 
+					.reference__list
+						.row
+							.col-md-4.col-sm-6: .reference__item
+								.name Преимущества зимнего строительства дома
+								.text PopHouse позволяет начать строительство зимой по летним ценам без увеличения стоимости, определенной сметой затрат. Строительная компания берет на себя...
+								a(href="#").btn.btn--green Подробнее
+							.col-md-4.col-sm-6: .reference__item
+								.name Построить деревянный дом под ключ в PopHouse – выгодно и быстро
+								.text PopHouse позволяет начать строительство зимой по летним ценам без увеличения...
+								a(href="#").btn.btn--green Подробнее
+							.col-md-4.col-sm-6: .reference__item
+								.name фундамент для деревянного дома
+								.text Фундамент для деревянного дома должен отвечать многочисленным базовым требованиям, которые предъявляются к нему со стороны строительных норм...
+								a(href="#").btn.btn--green Подробнее
+							.col-md-4.col-sm-6: .reference__item
+								.name Преимущества зимнего строительства дома
+								.text PopHouse позволяет начать строительство зимой по летним ценам без увеличения стоимости, определенной сметой затрат. Строительная компания берет на себя...
+								a(href="#").btn.btn--green Подробнее
+							.col-md-4.col-sm-6: .reference__item
+								.name Построить деревянный дом под ключ в PopHouse – выгодно и быстро
+								.text PopHouse позволяет начать строительство зимой по летним ценам без увеличения...
+								a(href="#").btn.btn--green Подробнее
+							.col-md-4.col-sm-6: .reference__item
+								.name фундамент для деревянного дома
+								.text Фундамент для деревянного дома должен отвечать многочисленным базовым требованиям, которые предъявляются к нему со стороны строительных норм...
+								a(href="#").btn.btn--green Подробнее
+							.pagination__wrap
+								span Страницы: 
+								ul.pagination
+									li: a(href="#").active 1
+									li: a(href="#") 2
+									li: a(href="#") 3
+									li: span ...
+									li: a(href="#") 5
+	include includes/cifri-noh2
