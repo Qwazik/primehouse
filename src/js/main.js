@@ -39,6 +39,7 @@
   }(jQuery));
 
 $(function(){
+    $('input[name="phone"]').inputmask('+7(999)-999-9999');
     $(window).load(function(){
        $('.certificates__item').equalHeight();
         $('.inner-steps__item').equalHeight();

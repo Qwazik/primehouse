@@ -51,9 +51,9 @@ block main
 							.sep.sep--form
 							p Заинтересовало предложение? Задайте свой вопрос и наш менеджер свяжется с вами
 							form(action="#")
-								input(type="text" placeholder="Имя", name="name").input-bd
-								input(type="text" placeholder="Номер телефона", name="phone").input-bd
-								textarea(placeholder="Вопрос").input-bd
+								input(required type="text" placeholder="Имя", name="name").input-bd
+								input(required type="text" placeholder="Номер телефона", name="phone").input-bd
+								textarea(required placeholder="Вопрос", name="comment").input-bd
 								button(type="submit").btn.btn--green Задать вопрос
 				.row
 					.col-md-7

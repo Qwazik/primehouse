@@ -44,9 +44,9 @@ block main
 				.steps-form__form
 					p Заполните необходимые поля и наш консультант свяжется с вами в ближайшее время
 					form(action="#")
-						input(type="text" placeholder="Имя").input-bd
-						input(type="text" placeholder="Телефон").input-bd
-						input(type="text" placeholder="E-mail").input-bd
+						input(required type="text" placeholder="Имя" name="name").input-bd
+						input(required type="text" placeholder="Телефон" name="phone").input-bd
+						input(type="text" placeholder="E-mail" name="email").input-bd
 						.sep.sep--form
 						button(type="submit").btn.btn--blue Проконсультироваться
 	// steps form end

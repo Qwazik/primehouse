@@ -30,9 +30,9 @@ block main
 				.sep.sep--small
 				p Задайте нам вопрос и мы ответим на него <br> в течение 10 минут
 				form(action="#")
-					.col-md-4: input(type="text" placeholder="Имя").input-bd
-					.col-md-4: input(type="text" placeholder="Телефон").input-bd
-					.col-md-4: input(type="text" placeholder="E-mail").input-bd
-					.col-md-12: textarea.input-bd(placeholder="Вопрос")
+					.col-md-4: input(required type="text" placeholder="Имя" name="name").input-bd
+					.col-md-4: input(required type="text" placeholder="Телефон" name="phone").input-bd
+					.col-md-4: input(type="email" placeholder="E-mail" name="email").input-bd
+					.col-md-12: textarea.input-bd(placeholder="Вопрос" name="comment")
 					button(type="submit").btn.btn--blue Задать вопрос
 	include includes/cifri-noh2

@@ -32,9 +32,9 @@ block main
 				.home-form__form
 					p Заполните необходимые поля и наш консультант свяжется с вами в ближайшее время
 					form(action="#")
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Телефон")
-						input(type="text" placeholder="E-mail")
+						input(required type="text" placeholder="Имя" name="name")
+						input(required type="text" placeholder="Телефон" name="phone")
+						input(type="email" placeholder="E-mail" name="email")
 						.sep.sep--form
 						button(type="submit").btn.btn--white Проконсультироваться
 	// home form end
@@ -68,9 +68,9 @@ block main
 				.w50.home-features__left
 					h3 Заказать консультацию
 					form(action="#")
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Телефон")
-						input(type="text" placeholder="E-mail")
+						input(required type="text" placeholder="Имя" name="name")
+						input(required type="text" placeholder="Телефон" name="phone")
+						input(type="email" placeholder="E-mail" name="email")
 						.sep.sep--form
 						button(type="submit").btn.btn--green проконсультироваться
 				.w50.home-features__right

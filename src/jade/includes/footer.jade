@@ -23,8 +23,8 @@
 							span 8 (800) 20 000 02
 					.main-footer__form
 						form(action="#")
-							input(type="text" placeholder="Имя")
-							input(type="text" placeholder="ТЕЛЕФОН")
+							input( required type="text" placeholder="Имя" name="name")
+							input( required type="text" placeholder="ТЕЛЕФОН" name="phone")
 							button(type="submit").btn.btn--green Заказать звонок
 	.main-footer__bottom.main-top
 		.container
@@ -34,10 +34,6 @@
 						li: a(href="#"): i.fa 
 						li: a(href="#"): i.fa 
 						li: a(href="#"): i.fa 
-					.search
-						form(action="#")
-							input(type="text")
-							button(type="submit").fa 
 				.col-lg-6.col-md-7.col-sm-6.ta-right
 					ul.info-block
 						li
@@ -51,8 +47,8 @@
 #callback.header-slider__form.fl-right
 	p ЗАКАЖИ ЗВОНОК
 	form(action="#")
-		input(type="text" placeholder="Имя")
-		input(type="text" placeholder="Телефон")
-		input(type="text" placeholder="E-mail")
+		input(required type="text" placeholder="Имя" name="name")
+		input(required type="text" placeholder="Телефон" name="phone")
+		input(type="text" placeholder="E-mail" name="email")
 		span.sep
 		button(type="submit").btn.btn--green Заказать
