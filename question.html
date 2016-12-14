@@ -39,7 +39,7 @@
                   </ul>
                   <div class="search">
                     <form action="#">
-                      <input type="text">
+                      <input type="text" name="s" required>
                       <button type="submit" class="fa"></button>
                     </form>
                   </div>
@@ -94,9 +94,9 @@
                 <div class="header-slider__form fl-right">
                   <p>ЗАКАЖИ ЗВОНОК</p>
                   <form action="#">
-                    <input type="text" placeholder="Имя" name="name">
-                    <input type="text" placeholder="Телефон" name="phone">
-                    <input type="text" placeholder="E-mail" name="email"><span class="sep"></span>
+                    <input required type="text" placeholder="Имя" name="name">
+                    <input required type="text" placeholder="Телефон" name="phone">
+                    <input type="email" placeholder="E-mail" name="email"><span class="sep"></span>
                     <button type="submit" class="btn btn--green">Заказать</button>
                   </form>
                 </div>
@@ -142,16 +142,16 @@
             <p>Задайте нам вопрос и мы ответим на него <br> в течение 10 минут</p>
             <form action="#">
               <div class="col-md-4">
-                <input type="text" placeholder="Имя" class="input-bd">
+                <input required type="text" placeholder="Имя" name="name" class="input-bd">
               </div>
               <div class="col-md-4">
-                <input type="text" placeholder="Телефон" class="input-bd">
+                <input required type="text" placeholder="Телефон" name="phone" class="input-bd">
               </div>
               <div class="col-md-4">
-                <input type="text" placeholder="E-mail" class="input-bd">
+                <input type="email" placeholder="E-mail" name="email" class="input-bd">
               </div>
               <div class="col-md-12">
-                <textarea placeholder="Вопрос" class="input-bd"></textarea>
+                <textarea placeholder="Вопрос" name="comment" class="input-bd"></textarea>
               </div>
               <button type="submit" class="btn btn--blue">Задать вопрос</button>
             </form>
@@ -193,8 +193,8 @@
                 <div class="main-footer__phone"><span class="left">Позвоните нам<br>или закажите звонок</span><span class="right"> <i class="fa fa-phone"></i><span>8 (800) 20 000 02</span></span></div>
                 <div class="main-footer__form">
                   <form action="#">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="ТЕЛЕФОН">
+                    <input required type="text" placeholder="Имя" name="name">
+                    <input required type="text" placeholder="ТЕЛЕФОН" name="phone">
                     <button type="submit" class="btn btn--green">Заказать звонок</button>
                   </form>
                 </div>
@@ -211,12 +211,6 @@
                   <li><a href="#"><i class="fa"></i></a></li>
                   <li><a href="#"><i class="fa"></i></a></li>
                 </ul>
-                <div class="search">
-                  <form action="#">
-                    <input type="text">
-                    <button type="submit" class="fa"></button>
-                  </form>
-                </div>
               </div>
               <div class="col-lg-6 col-md-7 col-sm-6 ta-right">
                 <ul class="info-block">
@@ -233,9 +227,9 @@
       <div id="callback" class="header-slider__form fl-right">
         <p>ЗАКАЖИ ЗВОНОК</p>
         <form action="#">
-          <input type="text" placeholder="Имя">
-          <input type="text" placeholder="Телефон">
-          <input type="text" placeholder="E-mail"><span class="sep"></span>
+          <input required type="text" placeholder="Имя" name="name">
+          <input required type="text" placeholder="Телефон" name="phone">
+          <input type="text" placeholder="E-mail" name="email"><span class="sep"></span>
           <button type="submit" class="btn btn--green">Заказать</button>
         </form>
       </div>

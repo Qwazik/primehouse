@@ -39,7 +39,7 @@
                   </ul>
                   <div class="search">
                     <form action="#">
-                      <input type="text">
+                      <input type="text" name="s" required>
                       <button type="submit" class="fa"></button>
                     </form>
                   </div>
@@ -94,9 +94,9 @@
                 <div class="header-slider__form fl-right">
                   <p>ЗАКАЖИ ЗВОНОК</p>
                   <form action="#">
-                    <input type="text" placeholder="Имя" name="name">
-                    <input type="text" placeholder="Телефон" name="phone">
-                    <input type="text" placeholder="E-mail" name="email"><span class="sep"></span>
+                    <input required type="text" placeholder="Имя" name="name">
+                    <input required type="text" placeholder="Телефон" name="phone">
+                    <input type="email" placeholder="E-mail" name="email"><span class="sep"></span>
                     <button type="submit" class="btn btn--green">Заказать</button>
                   </form>
                 </div>
@@ -179,8 +179,8 @@
                 <div class="main-footer__phone"><span class="left">Позвоните нам<br>или закажите звонок</span><span class="right"> <i class="fa fa-phone"></i><span>8 (800) 20 000 02</span></span></div>
                 <div class="main-footer__form">
                   <form action="#">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="ТЕЛЕФОН">
+                    <input required type="text" placeholder="Имя" name="name">
+                    <input required type="text" placeholder="ТЕЛЕФОН" name="phone">
                     <button type="submit" class="btn btn--green">Заказать звонок</button>
                   </form>
                 </div>
@@ -197,12 +197,6 @@
                   <li><a href="#"><i class="fa"></i></a></li>
                   <li><a href="#"><i class="fa"></i></a></li>
                 </ul>
-                <div class="search">
-                  <form action="#">
-                    <input type="text">
-                    <button type="submit" class="fa"></button>
-                  </form>
-                </div>
               </div>
               <div class="col-lg-6 col-md-7 col-sm-6 ta-right">
                 <ul class="info-block">
@@ -219,9 +213,9 @@
       <div id="callback" class="header-slider__form fl-right">
         <p>ЗАКАЖИ ЗВОНОК</p>
         <form action="#">
-          <input type="text" placeholder="Имя">
-          <input type="text" placeholder="Телефон">
-          <input type="text" placeholder="E-mail"><span class="sep"></span>
+          <input required type="text" placeholder="Имя" name="name">
+          <input required type="text" placeholder="Телефон" name="phone">
+          <input type="text" placeholder="E-mail" name="email"><span class="sep"></span>
           <button type="submit" class="btn btn--green">Заказать</button>
         </form>
       </div>
