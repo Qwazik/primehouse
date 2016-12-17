@@ -29,6 +29,10 @@
 /*-------------------------------------------------*/
 @import "libs/animate";
 /*-------------------------------------------------*/
+/*    jquery-ui.min
+/*-------------------------------------------------*/
+@import "libs/jquery-ui";
+/*-------------------------------------------------*/
 /*    fonts
 /*-------------------------------------------------*/
 @import "settings/fonts";
@@ -1505,6 +1509,137 @@ div.inner-content{
 	&__show{
 		text-align: right;
 	}
+}
+
+.filter-left{
+	
+	color: #505050;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+	border-radius: 15px;
+	margin-top: 31px;
+	&__header{
+		padding: 20px 30px;	
+		font-size: 30px;
+		font-weight: 500;
+	}
+	form{
+		margin-top: -20px;
+		padding: 20px 30px;
+		padding-top: 0;
+	}
+	&__row{
+		.name{
+			font-size: 18px;
+		}
+		margin: 20px 0;
+	}
+}
+.label-group{
+	clear: both;
+	overflow: hidden;
+	label{
+		width: 50%;
+		float: left;
+		&:first-child{
+			padding-right: 6px;
+		}
+		&:last-child{
+			padding-left: 6px;
+		}
+	}
+}
+.input-wrap{
+	display: block;
+	cursor: pointer;
+	margin-top: 9px;
+	input[type="checkbox"], input[type="radio"]{
+		height: 0;
+		width: 0;
+		visibility: hidden;
+		position: absolute;
+		
+
+		&+span{
+			transition: background-color .5s;
+			font-family: Lato;
+			color: #505050;
+			
+			display: block;
+			border-radius: 14px;
+			background-color: #f7f7f7;
+			text-align: center;
+			padding: 4px 0;
+			&:hover{
+				background-color: darken(#f7f7f7, 5%);
+			}
+		}
+		&:checked+span{
+			color: white;
+			background-color: #40C574;
+		}
+	}
+}
+sup{
+	font-size: 10px;
+}
+.uislider{
+	&__wrap{
+		padding: 7px 8px;
+		margin: 10px 0 12px;
+	}
+	&__values{
+		input{
+
+			height: auto;
+			max-width: 113px;
+			box-shadow: none;
+			line-height: normal;
+		}
+		.min,.max{
+			text-align: center;
+			display: block;
+			width: 50%;
+			border-radius: 14px;
+			border: 1px solid #e0e0e0;
+			padding: 4px 17px;
+			color: #838383;
+			font-family: Lato;
+			font-size: 12px;
+			font-weight: 500;
+		}
+		.min{
+			&:before{
+				content: 'от ';
+			}
+			float: left;
+		}
+		.max{
+			&:before{
+				content: 'до ';
+			} 
+			float: right;
+		}
+	}
+}
+
+.ui-slider .ui-slider-handle{
+	width: 19px;
+	height: 19px;
+	background-color: #74bdce;
+	border: none;
+	background-image: url('../img/sliderHandler.png');
+}
+
+.ui-slider-range{
+	margin-top: -1px;
+	height: 5px !important;
+}
+.ui-widget-content{
+	border: none;
+	border: 1px solid #DEDEDE;
+	border-bottom: 1px solid #CDCDCD;
+	border-top: 1px solid #E6E6E6;
+
 }
 
 .filter-sort{
