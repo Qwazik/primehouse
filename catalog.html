@@ -126,152 +126,241 @@
       <!-- catalog form-->
       <div class="page__catalog">
         <div class="container">
-          <div class="filter clearfix">
-            <div class="w50">
-              <div class="filter-sort__wrap">
-                <div class="filter__sort"><span class="name">Сортировать:</span>
-                  <div class="filter-sort">
-                    <div class="filter-sort__active">По площади (больше)</div>
-                    <ul class="filter-sort__nav">
-                      <li class="active">По площади (больше)</li>
-                      <li>По площади (меньше)</li>
-                      <li>По популярности (ниже)</li>
-                      <li>По популярности (выше)</li>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="filter-left">
+                <p class="filter-left__header">Фильтр</p>
+                <form action="#">
+                  <div class="filter-left__row"><span class="name">Стоимость (руб.)</span>
+                    <div class="uislider__wrap">
+                      <div data-min="0" data-max="100000" data-valmin='1000' data-valmax="90000" class="uislider"></div>
+                    </div>
+                    <div class="uislider__values">
+                      <input readonly name="price_min" class="min">
+                      <input readonly name="price_max" class="max">
+                    </div>
+                  </div>
+                  <div class="filter-left__row"><span class="name">Площадь (м<sup>2</sup>)</span>
+                    <div class="uislider__wrap">
+                      <div data-min="0" data-max="100000" data-valmin='2000' data-valmax="50000" class="uislider"></div>
+                    </div>
+                    <div class="uislider__values">
+                      <input readonly name="area_min" class="min">
+                      <input readonly name="area_max" class="max">
+                    </div>
+                  </div>
+                  <div class="filter-left__row"><span class="name">Этажность</span>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="floors" value="Одноэтажный"><span>Одноэтажный</span>
+                    </label>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="floors" value="Двухэтажный"><span>Двухэтажный</span>
+                    </label>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="floors" value="Трехэтажный"><span>Трехэтажный</span>
+                    </label>
+                  </div>
+                  <div class="filter-left__row"><span class="name">Материал дома</span>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="material" value="Теплобетон"><span>Теплобетон</span>
+                    </label>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="material" value="Каменный"><span>Каменный</span>
+                    </label>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="material" value="Брусовой"><span>Брусовой</span>
+                    </label>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="material" value="Каркас"><span>Каркас</span>
+                    </label>
+                  </div>
+                  <div class="filter-left__row"><span class="name">Серия домов</span>
+                    <div class="label-group">
+                      <label class="input-wrap">
+                        <input type="checkbox" name="series" value="Шале"><span>Шале</span>
+                      </label>
+                      <label class="input-wrap">
+                        <input type="checkbox" name="series" value="Оптиум"><span>Оптиум</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filter-left__row"><span class="name">Дополнительно</span>
+                    <div class="label-group">
+                      <label class="input-wrap">
+                        <input type="checkbox" name="additional" value="Второй свет"><span>Второй свет</span>
+                      </label>
+                      <label class="input-wrap">
+                        <input type="checkbox" name="additional" value="Балкон"><span>Балкон</span>
+                      </label>
+                    </div>
+                    <div class="label-group">
+                      <label class="input-wrap">
+                        <input type="checkbox" name="additional" value="Гараж"><span>Гараж</span>
+                      </label>
+                      <label class="input-wrap">
+                        <input type="checkbox" name="additional" value="Терасса"><span>Терасса</span>
+                      </label>
+                    </div>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="additional" value="Большие окна"><span>Большие окна</span>
+                    </label>
+                    <label class="input-wrap">
+                      <input type="checkbox" name="additional" value="Плоская крыша"><span>Плоская крыша</span>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn--green">подобрать дом</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="filter clearfix">
+                <div class="w50">
+                  <div class="filter-sort__wrap">
+                    <div class="filter__sort"><span class="name">Сортировать:</span>
+                      <div class="filter-sort">
+                        <div class="filter-sort__active">По площади (больше)</div>
+                        <ul class="filter-sort__nav">
+                          <li class="active">По площади (больше)</li>
+                          <li>По площади (меньше)</li>
+                          <li>По популярности (ниже)</li>
+                          <li>По популярности (выше)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w50">
+                  <div class="filter__show"><span class="name">Отображать по:</span>
+                    <ul class="filter-show">
+                      <li><a href="#" class="active">6</a></li>
+                      <li><a href="#">12</a></li>
+                      <li><a href="#">24</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="w50">
-              <div class="filter__show"><span class="name">Отображать по:</span>
-                <ul class="filter-show">
-                  <li><a href="#" class="active">6</a></li>
-                  <li><a href="#">12</a></li>
-                  <li><a href="#">24</a></li>
+              <div class="catalog">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
+                      <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
+                        <div class="bottom clearfix">
+                          <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
+                          <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="catalog-item__hover">
+                        <ul>
+                          <li><span>Этажей: </span>2</li>
+                          <li><span>Жилая площадь: </span>290 м2</li>
+                          <li><span>Количество спален: </span>2</li>
+                          <li><span>Гараж: </span>на 1 машину</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
+                      <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
+                        <div class="bottom clearfix">
+                          <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
+                          <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="catalog-item__hover">
+                        <ul>
+                          <li><span>Этажей: </span>2</li>
+                          <li><span>Жилая площадь: </span>290 м2</li>
+                          <li><span>Количество спален: </span>2</li>
+                          <li><span>Гараж: </span>на 1 машину</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
+                      <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
+                        <div class="bottom clearfix">
+                          <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
+                          <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="catalog-item__hover">
+                        <ul>
+                          <li><span>Этажей: </span>2</li>
+                          <li><span>Жилая площадь: </span>290 м2</li>
+                          <li><span>Количество спален: </span>2</li>
+                          <li><span>Гараж: </span>на 1 машину</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
+                      <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
+                        <div class="bottom clearfix">
+                          <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
+                          <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="catalog-item__hover">
+                        <ul>
+                          <li><span>Этажей: </span>2</li>
+                          <li><span>Жилая площадь: </span>290 м2</li>
+                          <li><span>Количество спален: </span>2</li>
+                          <li><span>Гараж: </span>на 1 машину</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
+                      <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
+                        <div class="bottom clearfix">
+                          <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
+                          <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="catalog-item__hover">
+                        <ul>
+                          <li><span>Этажей: </span>2</li>
+                          <li><span>Жилая площадь: </span>290 м2</li>
+                          <li><span>Количество спален: </span>2</li>
+                          <li><span>Гараж: </span>на 1 машину</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
+                      <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
+                        <div class="bottom clearfix">
+                          <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
+                          <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
+                        </div>
+                      </div>
+                      <div class="catalog-item__hover">
+                        <ul>
+                          <li><span>Этажей: </span>2</li>
+                          <li><span>Жилая площадь: </span>290 м2</li>
+                          <li><span>Количество спален: </span>2</li>
+                          <li><span>Гараж: </span>на 1 машину</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__footer pagination__wrap"><span>Страницы: </span>
+                <ul class="pagination">
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><span>...</span></li>
+                  <li><a href="#">5</a></li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="catalog">
-            <div class="row">
-              <div class="col-md-4 col-sm-6">
-                <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
-                  <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
-                    <div class="bottom clearfix">
-                      <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
-                      <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item__hover">
-                    <ul>
-                      <li><span>Этажей: </span>2</li>
-                      <li><span>Жилая площадь: </span>290 м2</li>
-                      <li><span>Количество спален: </span>2</li>
-                      <li><span>Гараж: </span>на 1 машину</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
-                  <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
-                    <div class="bottom clearfix">
-                      <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
-                      <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item__hover">
-                    <ul>
-                      <li><span>Этажей: </span>2</li>
-                      <li><span>Жилая площадь: </span>290 м2</li>
-                      <li><span>Количество спален: </span>2</li>
-                      <li><span>Гараж: </span>на 1 машину</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
-                  <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
-                    <div class="bottom clearfix">
-                      <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
-                      <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item__hover">
-                    <ul>
-                      <li><span>Этажей: </span>2</li>
-                      <li><span>Жилая площадь: </span>290 м2</li>
-                      <li><span>Количество спален: </span>2</li>
-                      <li><span>Гараж: </span>на 1 машину</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
-                  <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
-                    <div class="bottom clearfix">
-                      <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
-                      <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item__hover">
-                    <ul>
-                      <li><span>Этажей: </span>2</li>
-                      <li><span>Жилая площадь: </span>290 м2</li>
-                      <li><span>Количество спален: </span>2</li>
-                      <li><span>Гараж: </span>на 1 машину</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
-                  <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
-                    <div class="bottom clearfix">
-                      <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
-                      <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item__hover">
-                    <ul>
-                      <li><span>Этажей: </span>2</li>
-                      <li><span>Жилая площадь: </span>290 м2</li>
-                      <li><span>Количество спален: </span>2</li>
-                      <li><span>Гараж: </span>на 1 машину</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="catalog__item catalog-item"><a href="card.html" class="catalog-item__image"><img src="img/catalog-image.jpg" alt=""></a>
-                  <div class="catalog-item__footer"><span class="name">Проект дома из камня с отделкой в стиле лофт</span>
-                    <div class="bottom clearfix">
-                      <div class="w50"><span class="area">275 м<sup>2</sup></span></div>
-                      <div class="w50"><span class="price">4 500 000 <i class="fa"></i></span></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item__hover">
-                    <ul>
-                      <li><span>Этажей: </span>2</li>
-                      <li><span>Жилая площадь: </span>290 м2</li>
-                      <li><span>Количество спален: </span>2</li>
-                      <li><span>Гараж: </span>на 1 машину</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="catalog__footer pagination__wrap"><span>Страницы: </span>
-            <ul class="pagination">
-              <li><a href="#" class="active">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><span>...</span></li>
-              <li><a href="#">5</a></li>
-            </ul>
           </div>
         </div>
       </div>

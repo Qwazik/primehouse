@@ -1,26 +1,5 @@
 //myPlugins
   ;(function($){
-    $.fn.qTabs = function(){
-        var global = this;
-        global.find('.tabs-content__item').hide();
-        global.find('.tabs-content__item.active').show();
-        $(this).find('.tabs-nav li').click(function(){
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            var data = $(this).find('a').attr('href');
-            $(global).find('.tabs-content__item').hide().removeClass('active');
-            $(global).find('.tabs-content__item' + data + '').fadeIn(300).addClass('active');
-            return false;
-        })
-    }
-    $.fn.qToggle = function(){
-        var global = this;
-        $(this).click(function(e){
-            e.preventDefault();
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-        })
-    }
     $.fn.equalHeight = function(){
         var global = this,
             maxHeigh = 0,
@@ -85,8 +64,6 @@ $(function(){
     /*  card  end
     /*-------------------------------------------------*/
 
-
-
     var mapPointsCarousel = $('#mainMapList').bxSlider({
         pager: false,
         mode: 'vertical',
@@ -113,6 +90,10 @@ $(function(){
     $('.answerOpen').click(function(){
         $(this).closest('.inner-question__item').find('.answer').slideToggle();
     });
+
+    /*-------------------------------------------------*/
+    /*  filter
+    /*-------------------------------------------------*/
     
     if($('.filter-sort').length){
     $(document).click(function(e){
@@ -127,6 +108,50 @@ $(function(){
             $(this).find('.filter-sort__active').text($(e.target).text());
         }
     });
+
+    /*-------------------------------------------------*/
+    /*  filter left
+    /*-------------------------------------------------*/
+    
+    $('.filter-left__header').click(function(){
+        if($(this).siblings('form').is('.open:visible')){
+            $(this).siblings('form').slideUp(300).removeClass('open').addClass('close');
+        }
+        if($(this).siblings('form').is(':hidden')){
+            $(this).siblings('form').slideDown(300).removeClass('close').addClass('open');
+        }
+        
+    });
+
+    $('.uislider').each(function(){
+        var
+            container = $(this).closest('.filter-left__row'),
+            min = $(this).data('min'),
+            max = $(this).data('max'),
+            valueMin = $(this).data('valmin'),
+            valueMax = $(this).data('valmax'),
+            htmlMin = $(container).find('.min'),
+            htmlMax = $(container).find('.max');
+
+        $(htmlMin).val('от ' + valueMin);
+        $(htmlMax).val('до ' + valueMax);
+
+        $(this).slider({
+            min: min,
+            max: max,
+            range: true,
+            values: [valueMin, valueMax],
+            slide: function(e,ui){
+                $(htmlMin).val('от ' + ui.values[0]);
+                $(htmlMax).val('до ' + ui.values[1]);
+            }
+        });
+        
+    });
+
+    /*-------------------------------------------------*/
+    /*  maps
+    /*-------------------------------------------------*/
 
     ymaps.ready(function(){
         if($('#mainMap').length){
