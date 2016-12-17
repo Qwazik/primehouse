@@ -6265,7 +6265,7 @@ div, li, ul, input, textarea, p, h1, h2, h3, h4, h5, h6, header, footer {
   height: 5px; }
 
 .ui-slider-horizontal .ui-slider-handle {
-  top: -.5em;
+  top: -7px;
   margin-left: -.6em; }
 
 .ui-slider-horizontal .ui-slider-range {
@@ -8417,6 +8417,13 @@ sup {
 .uislider__wrap {
   padding: 7px 8px;
   margin: 10px 0 12px; }
+
+.uislider__values:after, .uislider__values:before {
+  content: ' ';
+  display: table; }
+
+.uislider__values:after {
+  clear: both; }
 
 .uislider__values input {
   height: auto;
